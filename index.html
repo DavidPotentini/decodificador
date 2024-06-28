@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <main>
+        <img class="logo" src="assets/a.png">
+
+        <section class="area-input">
+            <textarea placeholder="Digite seu texto" name="texto-de-entrada" class="texto-de-entrada"></textarea>
+            <div class="aviso">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botoes">
+                <input type="button" id="criptografar" value="Criptografar" class="botoes-principais" onclick="criptografar()">
+                <input type="button" id="descriptografar" value="Descriptografar" class="botoes-principais" onclick="descriptografar()">
+            </div>
+        </section>
+
+        <section class="area-output">
+            <img class="pessoa" src="assets/pessoa.png">
+                <div class="texto-padrao">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
